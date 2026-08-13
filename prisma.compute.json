@@ -1,0 +1,11 @@
+{
+  "region": "eu-west-3",
+  "app": {
+    "name": "null-void",
+    "framework": "nextjs",
+    "httpPort": 3000,
+    "build": {
+      "command": "npm run build"
+    }
+  }
+}
