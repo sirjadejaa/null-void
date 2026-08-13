@@ -1,18 +1,15 @@
 import { PrismaClient } from '@prisma/client';
-import { PrismaLibSql } from '@prisma/adapter-libsql';
+import { PrismaPg } from '@prisma/adapter-pg';
+import pg from 'pg';
 
 const globalForPrismaDb = globalThis as unknown as {
   prismaDb: PrismaClient | undefined;
 };
 
 let dbUrl = process.env.DATABASE_URL;
-if (!dbUrl || dbUrl === "undefined" || String(dbUrl) === "undefined") {
-  dbUrl = "file:./dev.db";
-}
 
-const adapter = new PrismaLibSql({
-  url: dbUrl,
-});
+const pool = new pg.Pool({ connectionString: dbUrl });
+const adapter = new PrismaPg(pool);
 
 export const prisma = globalForPrismaDb.prismaDb ?? new PrismaClient({ adapter });
 
