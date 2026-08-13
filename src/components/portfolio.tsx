@@ -6,7 +6,7 @@ import { TiltCard } from "./tilt-card";
 import { ArrowUpRight } from "lucide-react";
 import { MagneticWrapper } from "./magnetic-wrapper";
 
-import { Project } from "@prisma/client";
+import { Project } from "@/generated/prisma/client";
 
 interface PortfolioProps {
   projects: Project[];

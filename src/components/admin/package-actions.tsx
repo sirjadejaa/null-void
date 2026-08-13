@@ -1,6 +1,6 @@
 "use client";
 
-import { Package } from "@prisma/client";
+import { Package } from "@/generated/prisma/client";
 import { deletePackage } from "@/app/admin/actions";
 import { Edit, Trash2 } from "lucide-react";
 import { PackageModal } from "./package-modal";

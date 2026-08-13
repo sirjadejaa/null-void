@@ -3,7 +3,7 @@
 import { Check } from "lucide-react";
 import { MagneticWrapper } from "./magnetic-wrapper";
 
-import { Package } from "@prisma/client";
+import { Package } from "@/generated/prisma/client";
 
 interface PackagesProps {
   packages: Package[];

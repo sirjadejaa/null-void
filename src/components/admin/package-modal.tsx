@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { createPackage, updatePackage } from "@/app/admin/actions";
-import { Package } from "@prisma/client";
+import { Package } from "@/generated/prisma/client";
 import { Edit, Plus } from "lucide-react";
 
 interface PackageModalProps {

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
-import { Testimonial } from "@prisma/client";
+import { Testimonial } from "@/generated/prisma/client";
 
 interface TestimonialsProps {
   testimonials: Testimonial[];

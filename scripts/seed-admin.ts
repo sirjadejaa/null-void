@@ -1,13 +1,6 @@
-import { PrismaClient } from "@prisma/client";
-import { createClient } from "@libsql/client";
-import { PrismaLibSql } from "@prisma/adapter-libsql";
+import { prisma } from "../src/lib/prisma";
 import bcrypt from "bcryptjs";
 import "dotenv/config";
-
-const dbUrl = process.env.DATABASE_URL || "file:./dev.db";
-
-const adapter = new PrismaLibSql({ url: dbUrl });
-const prisma = new PrismaClient({ adapter });
 
 async function main() {
   const email = "admin@nullvoid.com";

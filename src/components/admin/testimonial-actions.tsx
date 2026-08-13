@@ -1,6 +1,6 @@
 "use client";
 
-import { Testimonial } from "@prisma/client";
+import { Testimonial } from "@/generated/prisma/client";
 import { deleteTestimonial } from "@/app/admin/actions";
 import { Edit, Trash2 } from "lucide-react";
 import { TestimonialModal } from "./testimonial-modal";

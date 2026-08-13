@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Service } from "@prisma/client";
+import { Service } from "@/generated/prisma/client";
 import * as LucideIcons from "lucide-react";
 
 interface ServicesProps {

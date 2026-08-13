@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { createService, updateService } from "@/app/admin/actions";
-import { Service } from "@prisma/client";
+import { Service } from "@/generated/prisma/client";
 import { Edit, Plus } from "lucide-react";
 
 interface ServiceModalProps {
